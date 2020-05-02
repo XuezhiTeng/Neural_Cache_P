@@ -17,7 +17,7 @@ module CLA (
 	INV inv_1 (inv2_out, or2_out);
 	XOR2 xor2_1 (SUM[1], inv2_out, cout0);
 	AND2 and2_1 (and2_out, inv2_out, cout0);
-  OR2 or2_11 (cout1, BL[1], and2_out); 
+        OR2 or2_11 (cout1, BL[1], and2_out); 
 
 	OR2 or2_2 (or3_out, BL[2], BLB[2]);
 	INV inv_2 (inv3_out, or3_out);
@@ -25,11 +25,11 @@ module CLA (
 	AND2 and2_2 (and3_out, inv3_out, cout1);
 	OR2 or2_22 (cout2, BL[2], and3_out); 
 
-    OR2 or2_3 (or4_out, BL[3], BLB[3]);
+        OR2 or2_3 (or4_out, BL[3], BLB[3]);
 	INV inv_3 (inv4_out, or4_out);
-    XOR2 xor2_3 (SUM[3], inv4_out, cout2);
+        XOR2 xor2_3 (SUM[3], inv4_out, cout2);
 	AND2 and2_3 (and4_out, inv4_out, cout2);
-    OR2 or2_33 (COUT, BL[3], and4_out); 
+        OR2 or2_33 (COUT, BL[3], and4_out); 
 
 endmodule 
 
